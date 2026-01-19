@@ -1,5 +1,3 @@
-package Assignment1_source_code.a_Introductory;
-
 public class Line {
 	private Point p1, p2;
 	

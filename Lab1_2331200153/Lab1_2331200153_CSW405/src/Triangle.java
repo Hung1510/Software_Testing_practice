@@ -1,4 +1,3 @@
-package Assignment1_source_code;
 import java.util.Scanner;
 
 public class Triangle {
@@ -30,21 +29,18 @@ public class Triangle {
 	    }
 
 	    public static boolean isTriangle(double a, double b, double c) {
-//	        if ((a + b > c) &&
-//	                (a + c >= b) &&
-//	                (b + c > a)) {
-//	            return true;
-//	        }
+		 	// error: All three conditions must use > and not >=
+//			if ((a + b > c) &&
+//					(a + c >= b) &&    //a+c >= b wrong
+//					(b + c > a)) {
 
-			// triangle inequality requires three conditions:
-			// a+b>c && a+c>b && b+c>a
-			// second condition should be >
-			// all side must be greater than
-			if ((a + b > c) &&
+	        if ((a + b > c) &&
 					(a + c > b) &&
-					(b + c > a)) {
-				return true;
-			}
+	                (b + c > a)) {
+	            return true;
+	        }
 	        return false;
 	    }
+
+
 }

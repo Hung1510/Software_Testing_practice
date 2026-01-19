@@ -1,4 +1,3 @@
-package Circle_Radius;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.ByteArrayInputStream;
@@ -31,5 +30,24 @@ class CircleRadiusTest {
 						consoleOutput+="and the area is 3.141592653589793."+System.getProperty("line.separator");
 				
 						assertEquals(consoleOutput,out.toString());
+				
+	}
+	@Test
+	void testMainWithABC() {
+		String input = "abc\n";
+		ByteArrayInputStream in =
+				new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);
+
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		System.setOut(new PrintStream(out));
+
+		String[] args = {};
+		CircleRadius.main(args);
+
+		String consoleOutput = "Enter the radius " + System.lineSeparator();
+		consoleOutput += "You have entered wrong value." + System.lineSeparator();
+
+		assertEquals(consoleOutput, out.toString());
 	}
 }
