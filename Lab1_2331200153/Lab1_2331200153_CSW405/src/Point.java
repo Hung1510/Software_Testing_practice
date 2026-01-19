@@ -1,5 +1,3 @@
-package Assignment1_source_code.a_Introductory;
-
 public class Point {
 	public Integer x, y;
 	

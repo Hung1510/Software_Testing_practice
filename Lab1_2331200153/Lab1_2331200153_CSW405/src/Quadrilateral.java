@@ -1,5 +1,3 @@
-package Assignment1_source_code.a_Introductory;
-
 public class Quadrilateral {
 	private Point p1, p2, p3, p4;
 	private Line l1, l2, l3, l4;
@@ -29,13 +27,11 @@ public class Quadrilateral {
 	
 	public Boolean isSquare() {
 //		return (isRectangle() &&
-//				l1.isSameLengthAs(l3));
-
-		// check if is a rectangle, angle are 90 deg
-		// 4 side equal
+//				l1.isSameLengthAs(l3)); -- // error: only checks opposite sides
 		return (isRectangle() &&
 				l1.isSameLengthAs(l2) &&
 				l2.isSameLengthAs(l3) &&
 				l3.isSameLengthAs(l4));
 	}
+
 }

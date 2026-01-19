@@ -1,11 +1,8 @@
-package Assignment1_source_code;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
 public class RomantoInteger {
-	
 	private static Map<Character, Integer> map;
 	static {
 		map=new HashMap<Character, Integer>();
@@ -30,22 +27,22 @@ public class RomantoInteger {
 			int currentNumber=map.get(s.charAt(i));
 			int next=i+1 < s.length() ? map.get(s.charAt(i+1)) :0;
 
-//			if (currentNumber>=next)
-//				convertedNumber-=currentNumber;
-//			else
-//				convertedNumber+=currentNumber;
+			   // error: inverted logic (- and + swapped)
+//			   if (currentNumber>=next)
+//				   convertedNumber-=currentNumber;
+//			   else
+//				   convertedNumber+=currentNumber;
 
-			   //logic inverted
-			   //currentNumber >= next, use add
-			   //currentNumber < next, use subtract
 			   if (currentNumber>=next)
 				   convertedNumber+=currentNumber;
 			   else
 				   convertedNumber-=currentNumber;
+
 		}
 		return convertedNumber;
 	}
 		else
 			return -1;
+	
 	}
 }

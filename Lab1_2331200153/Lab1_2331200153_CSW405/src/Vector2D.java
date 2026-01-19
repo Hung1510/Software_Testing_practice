@@ -1,5 +1,3 @@
-package Assignment1_source_code.a_Introductory;
-
 public class Vector2D {
 	public Integer x, y;
 	
@@ -15,10 +13,13 @@ public class Vector2D {
 	}
 	
 	public int dotProduct(Vector2D v) {
-		return (x * v.x) + (y * v.x);
+//		return (x * v.x) + (y * v.x); -- wrong
+		return (x * v.x) + (y * v.y);
 	}
 	
 	public boolean isOrthogonalTo(Vector2D v) {
-		return (dotProduct(v) == -1);
+//		return (dotProduct(v) == -1); -- wrong
+		int a = dotProduct(v);
+		return (dotProduct(v) == 0);
 	}
 }
