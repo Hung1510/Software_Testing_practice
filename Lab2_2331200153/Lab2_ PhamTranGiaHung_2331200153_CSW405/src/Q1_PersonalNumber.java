@@ -1,8 +1,7 @@
-/**
- * Personal Number class representing a Swedish-style personal number
- * Format: YYMMDD-XYZC
- * where YYMMDD is date of birth, XYZ is serial (Z indicates gender), C is checksum
- */
+// Personal Number class representing a Swedish-style personal number
+// Format: YYMMDD-XYZC
+// where YYMMDD is date of birth, XYZ is serial (Z indicates gender), C is checksum
+
 public class Q1_PersonalNumber {
     private String year;
     private String month;
@@ -78,7 +77,6 @@ public class Q1_PersonalNumber {
      * 3. Sum all results
      * 4. Take last digit of sum, subtract from 10
      * 5. If result is 10, checksum is 0
-     * 
      * @param digits First 9 digits of personal number
      * @return calculated checksum
      */

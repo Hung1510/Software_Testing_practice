@@ -10,8 +10,8 @@ public class Q3_ParkingGarageTest {
     private Q3_Car car1;
     private Q3_Car car2;
     private Q3_LowEmissionCar eco1;
-    private Q3_CargoTruck truck1;
-    private Q3_CargoTruck truck2;
+    private Q3_Truck truck1;
+    private Q3_Truck truck2;
     
     @Before
     public void setUp() {
@@ -22,8 +22,8 @@ public class Q3_ParkingGarageTest {
         car1 = new Q3_Car("ABC123", 5);
         car2 = new Q3_Car("XYZ789", 4);
         eco1 = new Q3_LowEmissionCar("ECO001", 4);
-        truck1 = new Q3_CargoTruck("TRK100", 25000); // 3 spaces
-        truck2 = new Q3_CargoTruck("TRK200", 50000); // 5 spaces
+        truck1 = new Q3_Truck("TRK100", 25000); // 3 spaces
+        truck2 = new Q3_Truck("TRK200", 50000); // 5 spaces
     }
     
     @Test
@@ -228,7 +228,7 @@ public class Q3_ParkingGarageTest {
         assertEquals(4.0, eco.getFee(), 0.01);
         
         // Test CargoTruck
-        Q3_CargoTruck truck = new Q3_CargoTruck("TEST3", 30000);
+        Q3_Truck truck = new Q3_Truck("TEST3", 30000);
         assertEquals("TEST3", truck.getLicenseNumber());
         assertEquals(30000, truck.getGrossWeight());
         assertEquals(3, truck.getSpacesRequired());
@@ -242,7 +242,7 @@ public class Q3_ParkingGarageTest {
     
     @Test(expected = IllegalArgumentException.class)
     public void testInvalidTruckWeight() {
-        new Q3_CargoTruck("TEST", -1000); // Should throw exception
+        new Q3_Truck("TEST", -1000); // Should throw exception
     }
     
     @Test(expected = IllegalArgumentException.class)
@@ -265,8 +265,8 @@ public class Q3_ParkingGarageTest {
         assertEquals(24.0, busyGarage.getTotalRevenue(), 0.01); // 8+8+4+4
         
         // Delivery trucks arrive
-        busyGarage.enter(new Q3_CargoTruck("TRK001", 20000)); // 2 spaces, $20
-        busyGarage.enter(new Q3_CargoTruck("TRK002", 35000)); // 4 spaces, $35
+        busyGarage.enter(new Q3_Truck("TRK001", 20000)); // 2 spaces, $20
+        busyGarage.enter(new Q3_Truck("TRK002", 35000)); // 4 spaces, $35
         
         assertEquals(10, busyGarage.getAvailableSpaces());
         assertEquals(79.0, busyGarage.getTotalRevenue(), 0.01);
