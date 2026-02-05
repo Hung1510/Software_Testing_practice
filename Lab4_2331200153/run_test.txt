@@ -1,0 +1,7 @@
+java -cp "pitest-run\pitest-command-line.jar;pitest-run\lib\*;out\production\CSW405_PhamTranGiaHung_2331200153_Lab4;out\test\CSW405_PhamTranGiaHung_2331200153_Lab4" ^
+org.pitest.mutationtest.commandline.MutationCoverageReport ^
+--reportDir reportAssignment4 ^
+--targetClasses "Class.*" ^
+--targetTests "Test.*" ^
+--sourceDirs src ^
+--verbose
