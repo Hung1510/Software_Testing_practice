@@ -19,10 +19,10 @@ public class CheckSTR {
 		if(givenstrvalue==0)
 			return "";
 		if(givenstrvalue %2==1)
-//			return 1+binarise(givenstrvalue/2);
+		//return 1+binarise(givenstrvalue/2);
 			//creates a reversed binary string because prepend 1
 			return binarise(givenstrvalue/2) + "1";
-//		return "0"+binarise(givenstrvalue/2);
+		//return "0"+binarise(givenstrvalue/2);
 		// creates a reversed binary string because prepend 0
 		return binarise(givenstrvalue/2) + "0";
 		}

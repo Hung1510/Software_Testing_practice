@@ -1,5 +1,10 @@
 package org.example;
 
+//bug
+//public void setYearmonthdate(int year, int date, int month)
+// else if((isleap(year)==0) && day>=28)
+//if(day<=31)
+
 public class NextDate {
     public int day, month, year, tomm_day, tomm_month, tomm_year;
     public String s1;
@@ -18,7 +23,8 @@ public class NextDate {
             return 0;
     }
 
-//    public void setYearmonthdate(int year, int date, int month) { year - month date
+    //public void setYearmonthdate(int year, int date, int month) {
+    //parameter order is wrong should be year,month, date
     public void setYearmonthdate(int year, int month, int date) {
         this.year = year;
         this.day = date;
@@ -51,7 +57,8 @@ public class NextDate {
                 s1 = "invalid date input for leap year";
                 return s1;
             }
-//            else if ((isleap(year) == 0) && day >= 28) { -- wrong
+            // else if ((isleap(year) == 0) && day >= 28) {
+            //Should be day > 28 not day >= 28
             else if ((isleap(year) == 0) && day > 28) {
                 s1 = "invalid date input for not a leap year";
                 return s1;
@@ -85,7 +92,8 @@ public class NextDate {
                 break;
 
             case 12:
-//                if (day <= 31) -- wrong
+                //if (day <= 31)
+                //correct is day < 31 not day <= 31
                 if (day < 31)
                     tomm_day = day + 1;
                 else {

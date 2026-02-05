@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 
+// error version dont add final carry digit, so if adding numbers like 999 + 1 would give 000 instead of 1000
 public class TwoNumbersSum {
 
     public ArrayList<Integer> addTwoNumbers(ArrayList<Integer> first, ArrayList<Integer> second) {
