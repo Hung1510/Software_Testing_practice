@@ -1,0 +1,12 @@
+org\pitest\aggregate\BlockCoverageDataLoader.class
+org\pitest\aggregate\AggregationResult.class
+org\pitest\aggregate\CodeSourceAggregator.class
+org\pitest\aggregate\DataLoader.class
+org\pitest\aggregate\ReportAggregator.class
+org\pitest\aggregate\TestXml.class
+org\pitest\aggregate\MutationResultDataLoader.class
+org\pitest\aggregate\ReportAggregator$Builder.class
+org\pitest\aggregate\ReportAggregatorResultListener.class
+org\pitest\aggregate\ReportAggregationException.class
+org\pitest\aggregate\MutationXml.class
+org\pitest\aggregate\CoverageXml.class

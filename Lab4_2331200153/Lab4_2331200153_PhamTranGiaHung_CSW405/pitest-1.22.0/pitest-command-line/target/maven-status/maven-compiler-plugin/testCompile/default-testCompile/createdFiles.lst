@@ -1,0 +1,3 @@
+org\pitest\mutationtest\commandline\PluginFilterTest.class
+org\pitest\mutationtest\commandline\CommaAwareArgsProcessorTest.class
+org\pitest\mutationtest\commandline\OptionsParserTest.class

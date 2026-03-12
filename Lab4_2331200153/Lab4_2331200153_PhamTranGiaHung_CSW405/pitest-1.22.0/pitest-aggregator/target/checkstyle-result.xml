@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.19">
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\AggregationResult.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\BlockCoverageDataLoader.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\CodeSourceAggregator.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\CoverageXml.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\DataLoader.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\MutationResultDataLoader.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\MutationXml.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\ReportAggregationException.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\ReportAggregator.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\ReportAggregatorResultListener.java">
+</file>
+<file name="C:\Users\LY DAT\Desktop\store\csw405\lab4\2331200190_lydat_lab4\pitest-1.22.0\pitest-aggregator\src\main\java\org\pitest\aggregate\TestXml.java">
+</file>
+</checkstyle>
